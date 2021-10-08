@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ws="http://www.w3.org/2001/XMLSchema" version="1.0">
+    <xs:element name="person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sub" type="subType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="subType">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
